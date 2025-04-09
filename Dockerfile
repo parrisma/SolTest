@@ -45,6 +45,10 @@ RUN anchor --version
 RUN cargo install seahorse-dev
 RUN seahorse -V
 
+# Install Metaplex Sugar for NFT development
+RUN echo 1 | bash <(curl -sSf https://sugar.metaplex.com/install.sh)
+RUN sugar --version
+
 # Install Node Version Manager (NVM)
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.4/install.sh | bash
 

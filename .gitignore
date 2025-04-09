@@ -1,0 +1,58 @@
+# Ignore Rust build artifacts
+target/
+Cargo.lock
+
+# Ignore Solana test validator data
+.solana/
+
+# Ignore Anchor-generated files
+.mpl-cache/
+.anchor/
+anchor.log
+
+# Ignore Seahorse-specific files
+.seahorse/
+
+# Ignore Node modules (if used)
+node_modules/
+
+# Ignore VS Code settings
+.vscode/
+*.code-workspace
+
+# Ignore editor-specific files
+*.swp
+.idea/
+
+# Ignore environment files
+.env
+.env.local
+.env.*.local
+
+# Ignore Python cache files (for Seahorse)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore generated program binaries
+programs/**/target/
+programs/**/node_modules/
+
+# Ignore test outputs
+tests/**/target/
+tests/**/.anchor/
+
+# Ignore compiled binaries
+*.so
+*.dylib
+*.dll
+*.exe
+
+# Ignore generated Solana keys
+keys/
+*.json
+
+# Ignore logs
+*.log
+debug.log
